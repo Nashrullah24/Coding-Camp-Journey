@@ -49,18 +49,11 @@ header.navbar-container .nav-list ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
+  padding: 0;
 }
 
 header.navbar-container .nav-list li {
   list-style-type: none;
-}
-
-header.navbar-container .nav-list li a:hover {
-  background-color: #53a648;
-  border-radius: 700px;
-  font-weight: 400;
-  color: white;
-  transition: all 0.2s ease-in-out;
 }
 
 header.navbar-container .nav-list li a {
@@ -68,6 +61,14 @@ header.navbar-container .nav-list li a {
   font-weight: 400;
   color: rgb(36, 36, 105);
   padding: 10px 20px;
+  border-radius: 700px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li a:hover {
+  background-color: #53a648;
+  font-weight: 400;
+  color: white;
 }
 
 a::after {
@@ -233,8 +234,23 @@ footer .bottom-footer {
   header.navbar-container {
     flex-direction: column;
     border: 0.5px solid #0a2b56;
-    padding: 20px;
+    padding: 5px 20px;
   }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem 1rem;
+    align-content: center;
+  }
+
+  header.navbar-container .nav-list li a {
+    background-color: #0a2b56;
+    color: white;
+    font-weight: 500;
+    padding-inline: 15px;
+  }
+
   .hero-container {
     flex-direction: column;
     gap: 2em;
