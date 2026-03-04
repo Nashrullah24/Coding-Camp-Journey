@@ -352,6 +352,14 @@ figure img {
     flex-direction: column;
     padding: 20px;
   }
+
+  .article-container figure {
+    margin: 0;
+  }
+
+  .article-container figure img {
+    width: 100%;
+  }
 }
 
 /* ============= */
@@ -362,6 +370,7 @@ main.login-container {
   margin: auto;
   padding: 2em;
   border-radius: 20px;
+  font-family: "Funnel Display", sans-serif;
 
   background-color: #53a648;
 
@@ -410,6 +419,7 @@ main.login-container {
 .login-form form a {
   text-decoration: none;
   color: white;
+
   font-size: 12px;
   text-align: center;
 }
@@ -419,6 +429,7 @@ main.login-container {
 }
 
 .login-form h1 {
+  font-family: "Funnel Display", sans-serif;
   font-size: 35px;
   color: white;
 }
@@ -439,8 +450,70 @@ main.login-container .login-image {
 main.login-container .login-image img {
   width: 300px;
 }
+@media screen and (max-width: 768px) and (min-width: 491px) {
+  main.login-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    justify-content: center;
+    border-radius: 0px;
+    padding: 20px;
+  }
 
-@media screen and (max-width: 768px) {
+  main.login-container .login-image {
+    width: 100%;
+    max-height: 30em;
+    border-radius: 10px 0px 0px 0px;
+  }
+
+  main.login-container .login-image img {
+    width: 75%;
+  }
+
+  .login-form {
+    border-radius: 0px 0px 10px 0px;
+    width: 100%;
+    max-height: auto;
+    padding: 4em 6em;
+    justify-content: flex-start;
+  }
+
+  .login-form h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .login-form form {
+    height: 400px;
+
+    justify-content: space-evenly;
+  }
+  .login-form form input {
+    height: 40px;
+  }
+
+  .login-form button {
+    height: 60px;
+    font-size: 25px;
+  }
+
+  /* .login-form label,
+  a {
+    font-size: 25px;
+  } */
+
+  .login-form label,
+  button {
+    font-weight: 550;
+  }
+
+  .login-form form a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 490px) {
   main.login-container {
     flex-direction: column;
     align-items: center;
