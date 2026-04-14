@@ -138,13 +138,13 @@ class RekeningTabungan {
   cetakRiwayat() {
     console.log(`=== Riwayat Transaksi - ${this.#pemilik}`);
     this.#riwayat.forEach((transaksi, index) => {
-      if (transaksi === "Saldo Awal") {
+      if (transaksi.jenis === "Saldo Awal") {
         console.log(`${index + 1}. ${transaksi.jenis}: Rp${transaksi.saldo}`);
-      } else if (transaksi === "Deposit") {
+      } else if (transaksi.jenis === "Deposit") {
         console.log(
           `${index + 1}. ${transaksi.jenis}: +Rp${transaksi.jumlah} | Saldo Rp${transaksi.saldo}`,
         );
-      } else if (transaksi === "Tarik") {
+      } else if (transaksi.jenis === "Tarik") {
         console.log(
           `${index + 1}. ${transaksi.jenis}: -Rp${transaksi.jumlah} | Saldo Rp${transaksi.saldo}`,
         );
