@@ -79,4 +79,3 @@ const intern = new Intern("Sari", 2000000, "3 Bulan");
 
 manager.info();
 intern.info();
-pegawai.info();
