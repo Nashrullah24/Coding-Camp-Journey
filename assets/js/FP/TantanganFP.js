@@ -14,13 +14,13 @@ const produk = [
 // 4. Tampilkan nama & harga produk tersisa
 
 const produkTersedia = produk.filter((p) => p.stok > 0);
-const produkDiskon = produkTersedia.map((p) => ({
-  ...p,
-  harga: p.harga - p.harga * 0.15,
-}));
-const totalInventori =
-  produkDiskon.reduce((acc, proter) => acc + proter.harga, 0) *
-  produkDiskon.reduce((acc, proter) => acc + proter.stok, 0);
+const produkDiskon = produkTersedia.map((p) =>
+  p.kategori === "elektronik" ? { ...p, harga: p.harga * 0.85 } : p,
+);
+const totalInventori = produkDiskon.reduce(
+  (acc, proter) => acc + proter.harga * proter.stok,
+  0,
+);
 const daftarProduk = produkDiskon.map((p) => ({
   nama: p.nama,
   harga: p.harga,
