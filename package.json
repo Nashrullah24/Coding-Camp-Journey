@@ -1,0 +1,11 @@
+{
+  "name": "project-coding-camp",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1"
+  }
+}
