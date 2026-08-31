@@ -15,3 +15,14 @@ test("Tes fungsi tambah positif", () => {
 test("tes fungsi tambah negatif", () => {
   assert.equal(tambah(-3, -5), -8);
 });
+
+test("Test assert ganjil genap", () => {
+  const truefalse = () => {
+    if (isGenap(2) == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  assert.strictEqual(truefalse, true);
+});

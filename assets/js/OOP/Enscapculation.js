@@ -80,7 +80,7 @@ console.log(s.fahrenheit); // 32
 s.celsius = -300; // ❌ "Suhu tidak boleh di bawah absolute zero!"
 console.log(s.celsius); // 0 (tidak berubah)
 
-// soal tantangan
+// soal tantangan: sistem tarik tunai bank
 class RekeningTabungan {
   #saldo;
   #riwayat; // array untuk menyimpan riwayat transaksi
